@@ -1,17 +1,21 @@
 'use strict'
 
-// let obj = {
+let numberOfFilms = +prompt('Сколько фильмов вы просмотрели?', 1);
+let personalMovieDb = {
 
-//     name: 'John'
-// };
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
 
-// let descriptor = Object.getOwnPropertyDescriptor(obj, 'name');
-// console.log(descriptor);
+let a = prompt('Один из последних просмотренных фильмов?', ''),
+    b = prompt('На сколько оцените его?', ''),
+    c = prompt('Один из последних просмотренных фильмов?', ''),
+    d = prompt('На сколько оцените его?', '');
 
-// Object.defineProperty(obj, 'name', {
+    personalMovieDb.movies[a] = b;
+    personalMovieDb.movies[c] = d;
 
-//     writable: false
-// });
-
-
-
+    console.log(personalMovieDb);
